@@ -1,0 +1,208 @@
+[MainWindow]
+Create=1
+Visible=1
+State=0
+Left=0
+Top=0
+Width=1024
+Height=106
+MaxLeft=0
+MaxTop=0
+ClientWidth=1016
+ClientHeight=60
+
+[ProjectManager]
+LargeButtons=1
+Column0Width=75
+Column1Width=125
+Column2Width=125
+
+[PropertyInspector]
+Create=1
+Visible=1
+State=0
+Left=0
+Top=102
+Width=175
+Height=641
+MaxLeft=-1
+MaxTop=-1
+ClientWidth=167
+ClientHeight=617
+SplitPos=90
+
+[HistoryLists\hiWatchExpression]
+Count=16
+H0=s
+H1=(X*PixXRnd)
+H2=Speed1+(X*PixXRnd)
+H3=x
+H4=smlheight
+H5=y
+H6=lineposspeed
+H7=tempbufspeed2
+H8=tempbufspeed1
+H9=linepos
+H10=packetcount
+H11=53854-bufindex
+H12=Abs(ShortInt(TempBuf^[BufIndex]))
+H13=linecurrent
+H14=linecount
+H15=i3
+
+[HistoryLists\hiEvalExpression]
+Count=32
+H0=s
+H1=i
+H2=bufsize^
+H3=length(S)
+H4=setprog[53]
+H5=setprog[52]
+H6=length(setprog)
+H7=setprog
+H8=ord('C')
+H9=WinDVDForm.WinDVDDrive.Text
+H10=formname.name
+H11=formname
+H12=sval
+H13=filename
+H14=LangFile
+H15=scomp
+H16=sform
+H17=skey
+H18=killdir
+H19=srtdir
+H20=srec.name
+H21=srec
+H22=apptitle
+H23=windir
+H24=runningnt
+H25=128+64
+H26=0
+H27='regsvr32 /S '+S+WinDVDDir+'\ivivideo.ax'
+H28=PChar('regsvr32 /S '+S+WinDVDDir+'\ivivideo.ax')
+H29=tform(sender).name
+H30=fname
+H31=GetSysDirectory(DesktopStr)+AppTitle+LinkExt
+
+[HistoryLists\hiOpenFile]
+Count=21
+H0=c:\program files\borland\apps\avifrate\avifrate.dpr
+H1=c:\program files\borland\apps\windvdexpert\windvdexpert.dpr
+H2=c:\program files\borland\components\fngsingleinst.pas
+H3=c:\program files\borland\apps\runquery\runquery.dpr
+H4=c:\program files\borland\apps\avimake\project1.dpr
+H5=c:\program files\borland\apps\active_grab\agrab.dpr
+H6=c:\program files\borland\apps\console\sweep32\sweep32.dpr
+H7=c:\program files\borland\apps\atimacro\atimacro.dpr
+H8=c:\program files\borland\apps\prdraw\prdraw.dpr
+H9=c:\program files\borland\apps\flic_component\fliccomp.dpr
+H10=c:\program files\borland\apps\formdir\formdir.dpr
+H11=c:\program files\borland\apps\htmlindex\htmlidx.dpr
+H12=c:\program files\borland\apps\gifcomp\gifdisp.dpr
+H13=c:\program files\borland\apps\amp\vis_bez.dpr
+H14=c:\program files\borland\apps\htmlcat\htmlcat.dpr
+H15=c:\program files\borland\apps\colorspace\color.dpr
+H16=c:\program files\borland\apps\fcomp2\fcomp2.dpr
+H17=c:\program files\borland\apps\qver32\qver32.dpr
+H18=c:\t\nuker.dpr
+H19=c:\program files\borland\apps\ddraw.old\directx.dpr
+H20=c:\program files\borland\apps\ddraw\directx.dpr
+
+[HistoryLists\hiRunParams]
+Count=17
+H0=/minimize
+H1=/AUTO
+H2=/AUTIO
+H3=/optimizeoff /delay 0 /play f:\gallery\weather.flc
+H4=/optimizeoff /delay 0 /play f:\weather.flc
+H5=/optimizeoff /delay 0 /play f:\test.flc
+H6=/optimize off /speed 0 /play test.flc
+H7=/play test.flc
+H8=/optimizeoff /playfile miasto.flc
+H9=/optimizeoff /playfile
+H10=/directxon /loopon /play campfire3.flc
+H11=/directxon /loopon /play campfire.flc
+H12=/loopon /play campfire3.flc
+H13=/loopon /play c:\download\mdk12.flc
+H14=/loop /play c:\download\mdk12.flc
+H15=c:\download\mdk12.flc
+H16=c:\download\mdk12.fl
+
+[HistoryLists\hiFindError]
+Count=2
+H0=0040291D
+H1=00E7FFFF
+
+[HistoryLists\hiUnitAlias]
+Count=1
+H0=WinTypes=Windows;WinProcs=Windows;DbiTypes=BDE;DbiProcs=BDE;DbiErrs=BDE;
+
+[HistoryLists\hiLibUnitAliases]
+Count=1
+H0=WinTypes=Windows;WinProcs=Windows;DbiTypes=BDE;DbiProcs=BDE;DbiErrs=BDE;
+
+[Closed Files]
+File_0=SourceModule,'C:\Program Files\Borland\Apps\dvdregion\windvdext.pas',0,1,53,8,77,1,1
+File_1=SourceModule,'C:\Program Files\Borland\Apps\dvdregion\mainunit.pas',0,1,5497,1,5526,1,0
+File_2=SourceModule,'C:\Program Files\Borland\Apps\dvdregion\infounit.pas',0,1,102,4,105,0,0
+File_3=SourceModule,'C:\Program Files\Borland\Apps\dvdregion\installunit.pas',0,1,228,1,261,0,0
+File_4=SourceModule,'C:\Program Files\Borland\Apps\dvdregion\cineundoc.pas',0,1,25,7,59,0,0
+File_5=PackageEditModule,'c:\Program Files\Borland\Delphi 3\Lib\dclusr30.dpk',0,200,108,585,405,1
+File_6=SourceModule,'c:\program files\borland\components\TBNArea.pas',0,1,143,1,171,0,0
+File_7=SourceModule,'c:\program files\borland\components\BrowseFolder.pas',0,1,546,1,581,0,0
+File_8=SourceModule,'C:\Program Files\Borland\Components\FngSingleInst.pas',0,1,112,18,123,0,0
+File_9=SourceModule,'c:\Program Files\Borland\Apps\dvdregion\mainunit.dfm',0,1,1,13,2,0,0
+
+[Modules]
+Module0=C:\Program Files\Borland\Apps\fourcc\mainunit.pas
+Module1=C:\Program Files\Borland\Apps\fourcc\avic.dpr
+Count=2
+EditWindowCount=1
+
+[C:\Program Files\Borland\Apps\fourcc\mainunit.pas]
+ModuleType=SourceModule
+FormState=1
+FormOnTop=0
+
+[C:\Program Files\Borland\Apps\fourcc\avic.dpr]
+ModuleType=SourceModule
+FormState=0
+FormOnTop=0
+
+[EditWindow0]
+Create=1
+Visible=1
+State=0
+Left=175
+Top=106
+Width=849
+Height=634
+MaxLeft=-1
+MaxTop=-1
+ClientWidth=841
+ClientHeight=607
+SplitPos=50
+MessagePane=0
+ViewCount=1
+CurrentView=0
+View0=0
+
+[View0]
+Module=C:\Program Files\Borland\Apps\fourcc\mainunit.pas
+CursorX=8
+CursorY=82
+TopLine=56
+LeftCol=1
+
+[Watches]
+Count=5
+Watch0='y',256,0,18,1
+Watch1='smlheight',256,0,18,1
+Watch2='x',256,0,18,1
+Watch3='(X*PixXRnd)',256,0,18,1
+Watch4='s',256,0,18,1
+
+[Breakpoints]
+Count=0
+

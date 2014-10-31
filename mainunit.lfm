@@ -1,0 +1,161 @@
+object MainForm: TMainForm
+  Left = 278
+  Height = 193
+  Top = 228
+  Width = 298
+  BorderStyle = bsSingle
+  Caption = 'AVI FourCC Code Changer 2.0'
+  ClientHeight = 193
+  ClientWidth = 298
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'MS Sans Serif'
+  OnClose = FormClose
+  OnCreate = FormCreate
+  Position = poScreenCenter
+  LCLVersion = '1.2.2.0'
+  object BrowseButton: TSpeedButton
+    Left = 272
+    Height = 21
+    Top = 132
+    Width = 21
+    Flat = True
+    Glyph.Data = {
+      7E030000424D7E030000000000003600000028000000120000000F0000000100
+      18000000000048030000120B0000120B00000000000000000000FF00FFFF00FF
+      FF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00
+      FFFF00FFFF00FFFF00FFFF00FFFF00FF0000FF00FF0000000000000000000000
+      00000000000000000000000000000000000000000000000000000000FF00FFFF
+      00FFFF00FFFF00FF0000FF00FF0000008AF4FF7BD9E36EC3CC66B4BD60AAB35E
+      A6AE5EA6AE5EA6AE5EA6AE5EA6AE5EA6AE5EA6AE000000FF00FFFF00FFFF00FF
+      0000FF00FF0000000000008AF4FF47ECFF44E1F344E1F343DEF043DEF043DEF0
+      42DCEE40D5E63CC9D95EA6AE000000FF00FFFF00FFFF00FF0000FF00FF000000
+      89ABAB0000008AF4FF47ECFF44E1F343DEF043DEF043DEF043DEF043DEF042DC
+      EE3CC9D95EA6AE000000FF00FFFF00FF0000FF00FF0000008FB3B30000008AF4
+      FF47ECFF44E1F344E1F343DEF043DEF043DEF043DEF043DEF040D5E660AAB300
+      0000FF00FFFF00FF0000FF00FF0000008FB3B37A999900000099F5FF47ECFF44
+      E1F344E1F344E1F344E1F343DEF043DEF043DEF042DCEE66B4BD000000FF00FF
+      0000FF00FF00000095BABA7A9999000000A6F7FF47ECFF47ECFF47ECFF47ECFF
+      44E1F344E1F344E1F344E1F344E1F36EC3CC000000FF00FF0000FF00FF000000
+      95BABA7A9999749191000000B8F8FFA6F7FF99F5FF8AF4FF47ECFF47ECFF47EC
+      FF47ECFF47ECFF7BD9E3000000FF00FF0000FF00FF0000009BC2C27A99997491
+      916C87870000000000000000000000008AF4FF8AF4FF8AF4FF8AF4FF8AF4FF00
+      0000FF00FFFF00FF0000FF00FF0000009BC2C27A999974919174919174919174
+      9191749191749191000000000000000000000000000000FF00FFFF00FFFF00FF
+      0000FF00FF000000A3CCCC7A99997A99997A99997A99997A999989ABAB89ABAB
+      83A3A381A1A181A1A1000000FF00FFFF00FFFF00FFFF00FF0000FF00FFFF00FF
+      000000A3CCCC9BC2C29BC2C295BABA95BABA0000000000000000000000000000
+      00000000FF00FFFF00FFFF00FFFF00FF0000FF00FFFF00FFFF00FF0000000000
+      00000000000000000000FF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF
+      00FFFF00FFFF00FF0000FF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF
+      00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FF
+      0000
+    }
+    OnClick = BrowseButtonClick
+  end
+  object Label2: TLabel
+    Left = 5
+    Height = 13
+    Top = 7
+    Width = 122
+    Caption = 'FourCC Description Code:'
+    ParentColor = False
+  end
+  object Label1: TLabel
+    Left = 5
+    Height = 13
+    Top = 104
+    Width = 100
+    Caption = 'FourCC Used Codec:'
+    ParentColor = False
+  end
+  object AVIName: TEdit
+    Left = 4
+    Height = 21
+    Top = 132
+    Width = 264
+    Color = clBtnFace
+    ParentShowHint = False
+    ReadOnly = True
+    ShowHint = True
+    TabStop = False
+    TabOrder = 0
+  end
+  object Panel1: TPanel
+    Left = 0
+    Height = 29
+    Top = 164
+    Width = 298
+    Align = alBottom
+    BevelOuter = bvLowered
+    ClientHeight = 29
+    ClientWidth = 298
+    TabOrder = 1
+    object ApplyButton: TSpeedButton
+      Left = 216
+      Height = 21
+      Hint = 'Apply new frame rate'
+      Top = 2
+      Width = 80
+      Caption = 'Apply'
+      Enabled = False
+      OnClick = ApplyButtonClick
+      ShowHint = True
+      ParentShowHint = False
+    end
+    object QuitButton: TSpeedButton
+      Left = 4
+      Height = 21
+      Top = 2
+      Width = 80
+      Caption = 'Quit'
+      OnClick = QuitButtonClick
+    end
+  end
+  object FourCCDesc: TComboBox
+    Left = 211
+    Height = 21
+    Top = 4
+    Width = 85
+    ItemHeight = 13
+    Items.Strings = (
+      'mp41'
+      'mp42'
+      'mp43'
+      'DIV4'
+    )
+    MaxLength = 4
+    OnChange = FourCCDescChange
+    TabOrder = 2
+  end
+  object FourCCCodec: TComboBox
+    Left = 211
+    Height = 21
+    Top = 100
+    Width = 85
+    ItemHeight = 13
+    Items.Strings = (
+      'MP41'
+      'MP42'
+      'MP43'
+      'DIV3'
+    )
+    MaxLength = 4
+    TabOrder = 3
+  end
+  object FourCCLongDesc: TMemo
+    Left = 4
+    Height = 64
+    Top = 28
+    Width = 292
+    ScrollBars = ssAutoVertical
+    TabOrder = 4
+  end
+  object OpenDialog: TOpenDialog
+    DefaultExt = '.avi'
+    Filter = 'AVI Files (*.AVI)|*.avi|All Files (*.*)|*.*'
+    Options = [ofHideReadOnly, ofPathMustExist, ofFileMustExist]
+    left = 56
+    top = 40
+  end
+end
